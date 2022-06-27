@@ -32,7 +32,7 @@ pnpm run prettier
 
 ```
 
-### git 提交规范（必看）
+## git 提交规范（必看）
 
 代码提交规范 commitizen
 
