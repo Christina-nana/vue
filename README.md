@@ -1,5 +1,16 @@
 # asean
 
+## 技术选型
+
+- vue3(建议使用：setup 标签)
+- webpack
+- UI 框架集成：element-plus（按需引入）
+- eslint + prettier
+- axios
+- vueRouter
+- vuex
+- git 提交规范：husky + commitizen + commitlint
+
 ## Project setup
 
 ```
@@ -18,7 +29,7 @@ pnpm run serve
 pnpm run build
 ```
 
-### 格式校验命令
+## 格式校验命令
 
 ```
 pnpm run lint

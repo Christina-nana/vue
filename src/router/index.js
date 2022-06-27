@@ -1,20 +1,49 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+import gateway from '../views/gateway/index.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    redirect: '/gateway'
+  },
+  {
+    path: '/gateway',
+    name: 'Gateway',
+    component: gateway
+  },
+  {
+    path: '/dynamicInfor',
+    name: 'DynamicInfor',
+    component: () => import('../views/dynamicInfor/index.vue')
+  },
+  {
+    path: '/mineActivity',
+    name: 'MineActivity',
+    component: () => import('../views/mineActivity/index.vue')
+  },
+  {
+    path: '/investGuide',
+    name: 'InvestGuide',
+    component: () => import('../views/investGuide/index.vue')
+  },
+  {
+    path: '/oneMap',
+    name: 'OneMap',
+    component: () => import('../views/oneMap/index.vue')
+  },
+  {
+    path: '/geoData',
+    name: 'GeoData',
+    component: () => import('../views/geoData/index.vue')
+  },
+  {
+    path: '/academicExchange',
+    name: 'AcademicExchange',
+    component: () => import('../views/academicExchange/index.vue')
   },
   {
     path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    name: 'About',
+    component: () => import('../views/about/index.vue')
   }
 ]
 
